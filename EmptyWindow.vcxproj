@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
     <ClInclude Include="ApplicationWindows.hpp" />
-    <ClInclude Include="TextureShader.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />

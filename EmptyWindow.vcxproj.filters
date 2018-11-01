@@ -18,9 +18,6 @@
     <ClInclude Include="Application.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextureShader.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ApplicationWindows.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
