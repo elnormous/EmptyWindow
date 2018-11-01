@@ -1,0 +1,8 @@
+EmptyWindow.xcodeproj/project.xcworkspace
+EmptyWindow.xcodeproj/xcuserdata
+.project
+.gradle
+.settings
+app/.externalNativeBuild
+app/.idea
+local.properties
