@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <cstdlib>
 #include <X11/Xutil.h>
 #include "ApplicationX11.hpp"
 
