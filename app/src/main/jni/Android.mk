@@ -5,7 +5,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := demo
 LOCAL_CFLAGS := -Wall -Wextra
 LOCAL_CPPFLAGS += -std=c++11 -fexceptions
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../../../sr
 
 LOCAL_SRC_FILES := ../../../../Application.cpp \
     ../../../../ApplicationAndroid.cpp
