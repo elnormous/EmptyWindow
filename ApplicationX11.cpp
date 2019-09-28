@@ -62,7 +62,7 @@ namespace emptywindow
 
     void ApplicationX11::run()
     {
-        int running = 1;
+        bool running = true;
         XEvent event;
 
         while (running)
@@ -76,7 +76,7 @@ namespace emptywindow
                     case ClientMessage:
                         if (event.xclient.message_type == protocolsAtom &&
                             static_cast<Atom>(event.xclient.data.l[0]) == deleteAtom)
-                            running = 0;
+                            running = false;
                         break;
                     case KeyPress:
                         break;
