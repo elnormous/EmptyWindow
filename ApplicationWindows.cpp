@@ -7,34 +7,37 @@
 #include <Strsafe.h>
 #include "ApplicationWindows.hpp"
 
-static LRESULT CALLBACK windowProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam)
+namespace
 {
-    emptywindow::ApplicationWindows* applicationWindows = (emptywindow::ApplicationWindows*)GetWindowLongPtr(window, GWLP_USERDATA);
-    if (!applicationWindows) return DefWindowProcW(window, msg, wParam, lParam);
-
-    switch (msg)
+    LRESULT CALLBACK windowProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam)
     {
-        case WM_PAINT:
+        emptywindow::ApplicationWindows* applicationWindows = (emptywindow::ApplicationWindows*)GetWindowLongPtr(window, GWLP_USERDATA);
+        if (!applicationWindows) return DefWindowProcW(window, msg, wParam, lParam);
+
+        switch (msg)
         {
-            break;
+            case WM_PAINT:
+            {
+                break;
+            }
+
+            case WM_SIZE:
+            {
+                break;
+            }
+
+            case WM_DESTROY:
+            {
+                PostQuitMessage(0);
+                break;
+            }
         }
 
-        case WM_SIZE:
-        {
-            break;
-        }
-
-        case WM_DESTROY:
-        {
-            PostQuitMessage(0);
-            break;
-        }
+        return DefWindowProcW(window, msg, wParam, lParam); 
     }
 
-    return DefWindowProcW(window, msg, wParam, lParam); 
+    const LPCWSTR WINDOW_CLASS_NAME = L"EmptyWindow";
 }
-
-static const LPCWSTR WINDOW_CLASS_NAME = L"EmptyWindow";
 
 namespace emptywindow
 {
