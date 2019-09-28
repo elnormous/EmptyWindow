@@ -18,7 +18,7 @@ extern "C" JNIEXPORT jint JNIEXPORT JNI_OnLoad(JavaVM* javaVM, void*)
     }
     catch (const std::exception& e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << e.what() << '\n';
     }
 
     return JNI_VERSION_1_6;
@@ -37,7 +37,7 @@ extern "C" JNIEXPORT void JNICALL Java_lv_elviss_softwarerenderer_DemoLibJNIWrap
     }
     catch (const std::exception& e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << e.what() << '\n';
     }
 }
 
@@ -49,7 +49,7 @@ extern "C" JNIEXPORT void JNICALL Java_lv_elviss_softwarerenderer_DemoLibJNIWrap
     }
     catch (const std::exception& e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << e.what() << '\n';
     }
 }
 
@@ -61,7 +61,7 @@ extern "C" JNIEXPORT void JNICALL Java_lv_elviss_softwarerenderer_DemoLibJNIWrap
     }
     catch (const std::exception& e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << e.what() << '\n';
     }
 }
 
