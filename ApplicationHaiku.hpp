@@ -17,7 +17,7 @@ namespace emptywindow
     {
     public:
         ApplicationHaiku();
-        virtual ~ApplicationHaiku();
+        ~ApplicationHaiku();
 
         void run();
 

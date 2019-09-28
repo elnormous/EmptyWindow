@@ -6,11 +6,4 @@
 
 namespace emptywindow
 {
-    Application::Application()
-    {
-    }
-
-    Application::~Application()
-    {
-    }
 }

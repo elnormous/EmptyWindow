@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationX11();
-        virtual ~ApplicationX11();
+        ~ApplicationX11();
 
         void run();
 

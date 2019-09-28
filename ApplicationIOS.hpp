@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationIOS();
-        virtual ~ApplicationIOS();
+        ~ApplicationIOS();
 
         void createWindow();
 

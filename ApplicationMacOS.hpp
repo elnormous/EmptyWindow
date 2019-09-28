@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationMacOS();
-        virtual ~ApplicationMacOS();
+        ~ApplicationMacOS();
 
         void run();
 

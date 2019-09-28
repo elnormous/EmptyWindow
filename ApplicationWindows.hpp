@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationWindows();
-        virtual ~ApplicationWindows();
+        ~ApplicationWindows();
 
         void run();
 

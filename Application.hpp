@@ -12,8 +12,8 @@ namespace emptywindow
     class Application
     {
     public:
-        Application();
-        ~Application();
+        Application() = default;
+        virtual ~Application() = default;
 
         Application(const Application&) = delete;
         Application& operator=(const Application&) = delete;

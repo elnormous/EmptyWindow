@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationAndroid(JavaVM* initJavaVM);
-        virtual ~ApplicationAndroid();
+        ~ApplicationAndroid();
 
         void init(jint initWidth, jint initHeight);
         void onDraw(jobject bitmap);

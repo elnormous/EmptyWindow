@@ -14,7 +14,7 @@ namespace emptywindow
     {
     public:
         ApplicationTVOS();
-        virtual ~ApplicationTVOS();
+        ~ApplicationTVOS();
 
         void createWindow();
 
