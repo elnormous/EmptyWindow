@@ -2,8 +2,8 @@
 //  EmptyWindow
 //
 
-#ifndef APPLICATIONHAIKU_H
-#define APPLICATIONHAIKU_H
+#ifndef APPLICATIONHAIKU_HPP
+#define APPLICATIONHAIKU_HPP
 
 #include <Application.h>
 #include "Application.hpp"

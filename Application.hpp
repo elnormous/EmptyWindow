@@ -2,8 +2,8 @@
 //  EmptyWindow
 //
 
-#ifndef APPLICATION_H
-#define APPLICATION_H
+#ifndef APPLICATION_HPP
+#define APPLICATION_HPP
 
 #include <cstdint>
 

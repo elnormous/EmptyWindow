@@ -2,8 +2,8 @@
 //  EmptyWindow
 //
 
-#ifndef APPLICATIONX11_H
-#define APPLICATIONX11_H
+#ifndef APPLICATIONX11_HPP
+#define APPLICATIONX11_HPP
 
 #include <X11/Xlib.h>
 #include "Application.hpp"
