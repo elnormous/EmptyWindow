@@ -1,4 +1,4 @@
-debug=0
+DEBUG=0
 ifeq ($(OS),Windows_NT)
 	platform=windows
 else
@@ -72,7 +72,7 @@ EXECUTABLE=EmptyWindow
 endif
 
 .PHONY: all
-ifeq ($(debug),1)
+ifeq ($(DEBUG),1)
 all: CXXFLAGS+=-DDEBUG -g
 endif
 all: bundle
