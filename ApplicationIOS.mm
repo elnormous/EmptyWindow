@@ -61,7 +61,7 @@ emptywindow::ApplicationIOS* sharedApplication;
 
 @implementation ViewController
 
--(id)initWithWindow:(emptywindow::ApplicationIOS*)initApplication
+-(id)initWithApplication:(emptywindow::ApplicationIOS*)initApplication
 {
     if (self = [super init])
         application = initApplication;
@@ -119,7 +119,7 @@ namespace emptywindow
 
         window = [[UIWindow alloc] initWithFrame:[screen bounds]];
 
-        viewController = [[[ViewController alloc] initWithWindow:this] autorelease];
+        viewController = [[[ViewController alloc] initWithApplication:this] autorelease];
         window.rootViewController = viewController;
 
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];

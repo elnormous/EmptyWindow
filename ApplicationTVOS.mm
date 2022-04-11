@@ -61,7 +61,7 @@ emptywindow::ApplicationTVOS* sharedApplication;
 
 @implementation ViewController
 
--(id)initWithWindow:(emptywindow::ApplicationTVOS*)initApplication
+-(id)initWithApplication:(emptywindow::ApplicationTVOS*)initApplication
 {
     if (self = [super init])
         application = initApplication;
@@ -119,7 +119,7 @@ namespace emptywindow
 
         window = [[UIWindow alloc] initWithFrame:[screen bounds]];
 
-        viewController = [[[ViewController alloc] initWithWindow:this] autorelease];
+        viewController = [[[ViewController alloc] initWithApplication:this] autorelease];
         window.rootViewController = viewController;
 
         CGRect windowFrame = [window bounds];

@@ -63,7 +63,7 @@
 
 @implementation WindowDelegate
 
--(id)initWithWindow:(emptywindow::ApplicationMacOS*)initApplication
+-(id)initWithApplication:(emptywindow::ApplicationMacOS*)initApplication
 {
     if (self = [super init])
     {
@@ -124,7 +124,7 @@ namespace emptywindow
         [window setReleasedWhenClosed:NO];
 
         window.acceptsMouseMovedEvents = YES;
-        windowDelegate = [[WindowDelegate alloc] initWithWindow:this];
+        windowDelegate = [[WindowDelegate alloc] initWithApplication:this];
         window.delegate = windowDelegate;
 
         [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
