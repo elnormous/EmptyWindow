@@ -112,16 +112,8 @@
 				306944E0205E00A900C4969C /* ApplicationMacOS.mm */,
 				305F943B2123730900893FF5 /* ApplicationTVOS.hpp */,
 				305F943A2123730900893FF5 /* ApplicationTVOS.mm */,
-				30345F4720AA1BF300B9B963 /* Resources */,
 			);
 			name = EmptyWindow;
-			sourceTree = "<group>";
-		};
-		30345F4720AA1BF300B9B963 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		305F94352123729200893FF5 /* tvos */ = {
