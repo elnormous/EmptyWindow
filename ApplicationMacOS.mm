@@ -183,7 +183,7 @@ namespace emptywindow
         [window setReleasedWhenClosed:NO];
 
         window.acceptsMouseMovedEvents = YES;
-        windowDelegate = [[WindowDelegate alloc] initWithApplication:this];
+        windowDelegate = [[[WindowDelegate alloc] initWithApplication:this] autorelease];
         window.delegate = windowDelegate;
 
         [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
@@ -206,7 +206,6 @@ namespace emptywindow
             window.delegate = nil;
             [window release];
         }
-        if (windowDelegate) [windowDelegate release];
         if (pool) [pool release];
     }
 
