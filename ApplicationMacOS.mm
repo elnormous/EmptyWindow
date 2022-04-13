@@ -206,6 +206,7 @@ namespace emptywindow
             window.delegate = nil;
             [window release];
         }
+        if (windowDelegate) [windowDelegate release];
         if (pool) [pool release];
     }
 
