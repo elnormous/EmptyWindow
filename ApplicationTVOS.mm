@@ -69,6 +69,10 @@ emptywindow::ApplicationTVOS* sharedApplication;
     return self;
 }
 
+-(void)textFieldDidChange:(__unused id)sender
+{
+}
+
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
