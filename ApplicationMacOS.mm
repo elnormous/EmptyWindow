@@ -173,7 +173,7 @@ namespace emptywindow
                                   round(screen.frame.size.height / 2.0F - windowSize.height / 2.0F),
                                   windowSize.width, windowSize.height);
 
-        NSWindowStyleMask windowStyleMask = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask;
+        NSWindowStyleMask windowStyleMask = NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
 
         window  = [[NSWindow alloc] initWithContentRect:frame
                                               styleMask:windowStyleMask
