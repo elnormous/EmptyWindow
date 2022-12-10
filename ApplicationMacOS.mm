@@ -118,7 +118,7 @@ namespace emptywindow
 
         NSMenu* servicesMenu = [[[NSMenu alloc] init] autorelease];
         servicesItem.submenu = servicesMenu;
-        NSApp.servicesMenu = servicesMenu;
+        sharedApplication.servicesMenu = servicesMenu;
 
         [applicationMenu addItem:[NSMenuItem separatorItem]];
 
@@ -160,7 +160,7 @@ namespace emptywindow
 
         NSMenu* windowsMenu = [[[NSMenu alloc] initWithTitle:NSLocalizedString(@"Window", nil)] autorelease];
         windowsItem.submenu = windowsMenu;
-        NSApp.windowsMenu = windowsMenu;
+        sharedApplication.windowsMenu = windowsMenu;
 
         sharedApplication.mainMenu = mainMenu;
 
