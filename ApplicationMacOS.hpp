@@ -21,6 +21,7 @@ namespace emptywindow
     private:
         NSAutoreleasePool* pool = nil;
 
+        NSObject<NSApplicationDelegate>* appDelegate = nil;
         NSScreen* screen = nil;
         NSWindow* window = nil;
         NSView* content = nil;

@@ -94,13 +94,10 @@ namespace emptywindow
 
     ApplicationTVOS::~ApplicationTVOS()
     {
-        if (content) [content release];
-        if (window)
-        {
-            window.rootViewController = nil;
-            [window release];
-        }
-        if (pool) [pool release];
+        [content release];
+        window.rootViewController = nil;
+        [window release];
+        [pool release];
     }
 
     void ApplicationTVOS::createWindow()

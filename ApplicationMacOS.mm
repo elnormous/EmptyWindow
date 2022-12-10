@@ -85,9 +85,11 @@ namespace emptywindow
     {
         pool = [[NSAutoreleasePool alloc] init];
 
+        appDelegate = [[AppDelegate alloc] initWithApplication:this];
+
         NSApplication* sharedApplication = [NSApplication sharedApplication];
         [sharedApplication activateIgnoringOtherApps:YES];
-        [sharedApplication setDelegate:[[[AppDelegate alloc] initWithApplication:this] autorelease]];
+        [sharedApplication setDelegate:appDelegate];
 
         NSMenu* mainMenu = [[[NSMenu alloc] initWithTitle:@"Main Menu"] autorelease];
 
@@ -200,13 +202,11 @@ namespace emptywindow
 
     ApplicationMacOS::~ApplicationMacOS()
     {
-        if (content) [content release];
-        if (window)
-        {
-            window.delegate = nil;
-            [window release];
-        }
-        if (pool) [pool release];
+        [content release];
+        window.delegate = nil;
+        [window release];
+        [appDelegate release];
+        [pool release];
     }
 
     void ApplicationMacOS::run()
