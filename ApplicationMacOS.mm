@@ -108,7 +108,7 @@ namespace emptywindow
         NSMenuItem* aboutItem = [applicationMenu addItemWithTitle:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"About", nil), bundleName]
                                                            action:@selector(orderFrontStandardAboutPanel:)
                                                     keyEquivalent:@""];
-        aboutItem.target = NSApp;
+        aboutItem.target = sharedApplication;
 
         [applicationMenu addItem:[NSMenuItem separatorItem]];
 
@@ -125,25 +125,25 @@ namespace emptywindow
         NSMenuItem* hideItem = [applicationMenu addItemWithTitle:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Hide", nil), bundleName]
                                                           action:@selector(hide:)
                                                    keyEquivalent:@"h"];
-        hideItem.target = NSApp;
+        hideItem.target = sharedApplication;
 
         NSMenuItem* hideOthersItem = [applicationMenu addItemWithTitle:NSLocalizedString(@"Hide Others", nil)
                                                                 action:@selector(hideOtherApplications:)
                                                          keyEquivalent:@"h"];
         hideOthersItem.keyEquivalentModifierMask = NSEventModifierFlagOption | NSEventModifierFlagCommand;
-        hideOthersItem.target = NSApp;
+        hideOthersItem.target = sharedApplication;
 
         NSMenuItem* showAllItem = [applicationMenu addItemWithTitle:NSLocalizedString(@"Show All", nil)
                                                              action:@selector(unhideAllApplications:)
                                                       keyEquivalent:@""];
-        showAllItem.target = NSApp;
+        showAllItem.target = sharedApplication;
 
         [applicationMenu addItem:[NSMenuItem separatorItem]];
 
         NSMenuItem* quitItem = [applicationMenu addItemWithTitle:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Quit", nil), bundleName]
                                                           action:@selector(terminate:)
                                                    keyEquivalent:@"q"];
-        quitItem.target = NSApp;
+        quitItem.target = sharedApplication;
 
         // View menu
         NSMenuItem* viewItem = [mainMenu addItemWithTitle:NSLocalizedString(@"View", nil)
