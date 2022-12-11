@@ -26,7 +26,6 @@ namespace emptywindow
         UIScreen* screen = nil;
         UIWindow* window = nil;
         UIView* content = nil;
-        UIViewController* viewController = nil;
     };
 }
 

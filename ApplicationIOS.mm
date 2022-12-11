@@ -116,7 +116,7 @@ namespace emptywindow
 
         window = [[UIWindow alloc] initWithFrame:[screen bounds]];
 
-        viewController = [[[ViewController alloc] initWithApplication:this] autorelease];
+        UIViewController* viewController = [[[ViewController alloc] initWithApplication:this] autorelease];
         window.rootViewController = viewController;
 
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
