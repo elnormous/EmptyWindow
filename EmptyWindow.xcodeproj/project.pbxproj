@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3000EC9D294771A5000F44F6 /* EmptyWindow Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "EmptyWindow Help"; sourceTree = "<group>"; };
 		30345F2A20A9062200B9B963 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		305F942121235C0D00893FF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		305F94332123726B00893FF5 /* EmptyWindowTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWindowTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +129,7 @@
 		306944AE205DF40A00C4969C /* macos */ = {
 			isa = PBXGroup;
 			children = (
+				3000EC9D294771A5000F44F6 /* EmptyWindow Help */,
 				306944B2205DF40A00C4969C /* Assets.xcassets */,
 				306944B7205DF40A00C4969C /* Info.plist */,
 			);
