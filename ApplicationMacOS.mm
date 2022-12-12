@@ -149,6 +149,15 @@ namespace emptywindow
                                                keyEquivalent:@""];
 
         NSMenu* windowsMenu = [[[NSMenu alloc] initWithTitle:NSLocalizedString(@"Window", nil)] autorelease];
+
+        [windowsMenu addItemWithTitle:NSLocalizedString(@"Minimize", nil)
+                               action:@selector(performMiniaturize:)
+                        keyEquivalent:@"m"];
+
+        [windowsMenu addItemWithTitle:NSLocalizedString(@"Zoom", nil)
+                               action:@selector(performZoom:)
+                        keyEquivalent:@""];
+
         windowsItem.submenu = windowsMenu;
         sharedApplication.windowsMenu = windowsMenu;
 
