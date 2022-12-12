@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30345F2B20A9062200B9B963 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
-		305F942221235C0D00893FF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305F942121235C0D00893FF5 /* CoreGraphics.framework */; };
 		305F94272123726A00893FF5 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
-		305F94292123726A00893FF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305F942121235C0D00893FF5 /* CoreGraphics.framework */; };
 		305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D285112122E1E400A4D87F /* UIKit.framework */; };
 		305F942F2123726A00893FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D285222122E22D00A4D87F /* Assets.xcassets */; };
 		305F9438212372AF00893FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305F9436212372AF00893FF5 /* Assets.xcassets */; };
@@ -27,7 +25,6 @@
 /* Begin PBXFileReference section */
 		3000EC9D294771A5000F44F6 /* EmptyWindow Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "EmptyWindow Help"; sourceTree = "<group>"; };
 		30345F2A20A9062200B9B963 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		305F942121235C0D00893FF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		305F94332123726B00893FF5 /* EmptyWindowTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWindowTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305F9436212372AF00893FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305F9437212372AF00893FF5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305F94292123726A00893FF5 /* CoreGraphics.framework in Frameworks */,
 				305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305F942221235C0D00893FF5 /* CoreGraphics.framework in Frameworks */,
 				C6D285342122E4CA00A4D87F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +134,6 @@
 		3071DEA820425CE50073390E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				305F942121235C0D00893FF5 /* CoreGraphics.framework */,
 				C6D285112122E1E400A4D87F /* UIKit.framework */,
 				306944E72068655900C4969C /* Cocoa.framework */,
 				3071DEAB20425CEC0073390E /* IOKit.framework */,
