@@ -159,11 +159,12 @@ namespace emptywindow
 
         NSMenu* helpMenu = [[[NSMenu alloc] initWithTitle:NSLocalizedString(@"Help", nil)] autorelease];
         helpItem.submenu = helpMenu;
-        sharedApplication.helpMenu = helpMenu;
 
         [helpMenu addItemWithTitle:[NSString stringWithFormat:@"%@ %@", bundleName, NSLocalizedString(@"Help", nil)]
                             action:@selector(showHelp:)
                      keyEquivalent:@"?"];
+
+        sharedApplication.helpMenu = helpMenu;
 
         sharedApplication.mainMenu = mainMenu;
 
