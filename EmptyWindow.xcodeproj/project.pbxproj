@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3000ECA72948193F000F44F6 /* EmptyWindow Help in Resources */ = {isa = PBXBuildFile; fileRef = 3000ECA62948193F000F44F6 /* EmptyWindow Help */; };
+		3000ECA72948193F000F44F6 /* EmptyWindowHelp in Resources */ = {isa = PBXBuildFile; fileRef = 3000ECA62948193F000F44F6 /* EmptyWindowHelp */; };
 		30345F2B20A9062200B9B963 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		305F94272123726A00893FF5 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D285112122E1E400A4D87F /* UIKit.framework */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3000ECA62948193F000F44F6 /* EmptyWindow Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "EmptyWindow Help"; sourceTree = "<group>"; };
+		3000ECA62948193F000F44F6 /* EmptyWindowHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmptyWindowHelp; sourceTree = "<group>"; };
 		30345F2A20A9062200B9B963 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		305F94332123726B00893FF5 /* EmptyWindowTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWindowTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305F9436212372AF00893FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		306944AE205DF40A00C4969C /* macos */ = {
 			isa = PBXGroup;
 			children = (
-				3000ECA62948193F000F44F6 /* EmptyWindow Help */,
+				3000ECA62948193F000F44F6 /* EmptyWindowHelp */,
 				306944B2205DF40A00C4969C /* Assets.xcassets */,
 				306944B7205DF40A00C4969C /* Info.plist */,
 			);
@@ -259,7 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3000ECA72948193F000F44F6 /* EmptyWindow Help in Resources */,
+				3000ECA72948193F000F44F6 /* EmptyWindowHelp in Resources */,
 				306944B3205DF40A00C4969C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

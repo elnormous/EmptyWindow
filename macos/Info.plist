@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleHelpBookFolder</key>
-	<string>EmptyWindow Help</string>
+	<string>EmptyWindowHelp</string>
 	<key>CFBundleHelpBookName</key>
 	<string>EmptyWindow Help</string>
 	<key>CFBundleIconFile</key>
