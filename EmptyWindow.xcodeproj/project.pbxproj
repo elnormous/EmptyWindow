@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3000ECA2294815CC000F44F6 /* EmptyWindow Help in Resources */ = {isa = PBXBuildFile; fileRef = 3000EC9D294771A5000F44F6 /* EmptyWindow Help */; };
 		30345F2B20A9062200B9B963 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		305F94272123726A00893FF5 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D285112122E1E400A4D87F /* UIKit.framework */; };
@@ -259,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				306944B3205DF40A00C4969C /* Assets.xcassets in Resources */,
+				3000ECA2294815CC000F44F6 /* EmptyWindow Help in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
