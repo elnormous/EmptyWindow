@@ -65,8 +65,8 @@ namespace emptywindow
         if (!windowClass)
             throw std::system_error{static_cast<int>(GetLastError()), std::system_category(), "Failed to register window class"};
 
-        DWORD windowStyle = WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_BORDER | WS_DLGFRAME | WS_THICKFRAME | WS_GROUP | WS_TABSTOP | WS_SIZEBOX | WS_MAXIMIZEBOX;
-        DWORD windowExStyle = WS_EX_APPWINDOW;
+        const DWORD windowStyle = WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_BORDER | WS_DLGFRAME | WS_THICKFRAME | WS_GROUP | WS_TABSTOP | WS_SIZEBOX | WS_MAXIMIZEBOX;
+        const DWORD windowExStyle = WS_EX_APPWINDOW;
 
         window = CreateWindowExW(windowExStyle, WINDOW_CLASS_NAME, L"EmptyWindow", windowStyle,
                                  CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
