@@ -63,17 +63,17 @@ namespace emptywindow
 
         windowClass = RegisterClassExW(&wc);
         if (!windowClass)
-            throw std::runtime_error("Failed to register window class");
+            throw std::system_error{static_cast<int>(GetLastError()), std::system_category(), "Failed to register window class"};
 
-        DWORD windowStyle = WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_BORDER | WS_DLGFRAME | WS_THICKFRAME | WS_GROUP | WS_TABSTOP | WS_SIZEBOX | WS_MAXIMIZEBOX;
-        DWORD windowExStyle = WS_EX_APPWINDOW;
+        const DWORD windowStyle = WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_BORDER | WS_DLGFRAME | WS_THICKFRAME | WS_GROUP | WS_TABSTOP | WS_SIZEBOX | WS_MAXIMIZEBOX;
+        const DWORD windowExStyle = WS_EX_APPWINDOW;
 
         window = CreateWindowExW(windowExStyle, WINDOW_CLASS_NAME, L"EmptyWindow", windowStyle,
                                  CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
                                  nullptr, nullptr, instance, nullptr);
 
         if (!window)
-            throw std::runtime_error("Failed to create window");
+            throw std::system_error{static_cast<int>(GetLastError()), std::system_category(), "Failed to create window"};
 
         ShowWindow(window, SW_SHOW);
         SetWindowLongPtr(window, GWLP_USERDATA, (LONG_PTR)this);
