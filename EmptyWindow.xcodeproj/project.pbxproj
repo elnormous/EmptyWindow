@@ -10,17 +10,17 @@
 		3000ECA72948193F000F44F6 /* EmptyWindowHelp in Resources */ = {isa = PBXBuildFile; fileRef = 3000ECA62948193F000F44F6 /* EmptyWindowHelp */; };
 		30345F2B20A9062200B9B963 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		305F94272123726A00893FF5 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
-		305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D285112122E1E400A4D87F /* UIKit.framework */; };
 		305F942F2123726A00893FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D285222122E22D00A4D87F /* Assets.xcassets */; };
 		305F9438212372AF00893FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305F9436212372AF00893FF5 /* Assets.xcassets */; };
 		305F943C2123730A00893FF5 /* ApplicationTVOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 305F943A2123730900893FF5 /* ApplicationTVOS.mm */; };
 		306944B3205DF40A00C4969C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306944B2205DF40A00C4969C /* Assets.xcassets */; };
 		306944E1205E00A900C4969C /* ApplicationMacOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 306944E0205E00A900C4969C /* ApplicationMacOS.mm */; };
 		306944E82068655900C4969C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306944E72068655900C4969C /* Cocoa.framework */; };
+		30C90252294B0C3C00FBD9B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C90251294B0C3C00FBD9B3 /* UIKit.framework */; };
+		30C90254294B0C5400FBD9B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C90253294B0C5400FBD9B3 /* UIKit.framework */; };
 		C6D285232122E22D00A4D87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D285222122E22D00A4D87F /* Assets.xcassets */; };
 		C6D2852D2122E27000A4D87F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30345F2A20A9062200B9B963 /* Application.cpp */; };
 		C6D285332122E29800A4D87F /* ApplicationIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6D285312122E29800A4D87F /* ApplicationIOS.mm */; };
-		C6D285342122E4CA00A4D87F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D285112122E1E400A4D87F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,8 @@
 		3071DEA920425CE50073390E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3071DEAB20425CEC0073390E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		30971FB2206BDA1C000D196D /* ApplicationMacOS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ApplicationMacOS.hpp; sourceTree = "<group>"; };
-		C6D285112122E1E400A4D87F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		30C90251294B0C3C00FBD9B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		30C90253294B0C5400FBD9B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS16.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C6D285172122E22A00A4D87F /* EmptyWindowIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyWindowIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D285222122E22D00A4D87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6D285272122E22D00A4D87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305F942A2123726A00893FF5 /* UIKit.framework in Frameworks */,
+				30C90254294B0C5400FBD9B3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D285342122E4CA00A4D87F /* UIKit.framework in Frameworks */,
+				30C90252294B0C3C00FBD9B3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +136,8 @@
 		3071DEA820425CE50073390E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6D285112122E1E400A4D87F /* UIKit.framework */,
+				30C90251294B0C3C00FBD9B3 /* UIKit.framework */,
+				30C90253294B0C5400FBD9B3 /* UIKit.framework */,
 				306944E72068655900C4969C /* Cocoa.framework */,
 				3071DEAB20425CEC0073390E /* IOKit.framework */,
 				3071DEA920425CE50073390E /* Foundation.framework */,
