@@ -184,11 +184,11 @@ namespace emptywindow
         windowSize.width = round(screen.frame.size.width * 0.6);
         windowSize.height = round(screen.frame.size.height * 0.6);
 
-        NSRect frame = NSMakeRect(round(screen.frame.size.width / 2.0F - windowSize.width / 2.0F),
-                                  round(screen.frame.size.height / 2.0F - windowSize.height / 2.0F),
-                                  windowSize.width, windowSize.height);
+        const NSRect frame = NSMakeRect(round(screen.frame.size.width / 2.0F - windowSize.width / 2.0F),
+                                        round(screen.frame.size.height / 2.0F - windowSize.height / 2.0F),
+                                        windowSize.width, windowSize.height);
 
-        NSWindowStyleMask windowStyleMask = NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
+        const NSWindowStyleMask windowStyleMask = NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
 
         window  = [[NSWindow alloc] initWithContentRect:frame
                                               styleMask:windowStyleMask
@@ -204,8 +204,8 @@ namespace emptywindow
         [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
         [window setTitle:@"EmptyWindow"];
 
-        NSRect windowFrame = [NSWindow contentRectForFrameRect:[window frame]
-                                                     styleMask:[window styleMask]];
+        const NSRect windowFrame = [NSWindow contentRectForFrameRect:[window frame]
+                                                           styleMask:[window styleMask]];
 
         content = [[NSView alloc] initWithFrame:windowFrame];
 
